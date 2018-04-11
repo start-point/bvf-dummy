@@ -1,0 +1,81 @@
+@page {
+  size: A4 landscape;
+}
+
+.document {
+  background: white;  
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 11pt;
+  width: 200mm;
+  height: 287mm;
+  padding: 10mm;
+}
+.bvf-logo {
+  width: 40px;
+  float: left;
+  margin: 3mm 5mm 5mm 0;
+}
+h1 {
+  font-size: 21pt;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+p 
+{
+  font-size: 11pt;
+  margin: 0 0 5mm 0;
+  padding: 0;
+}
+
+table {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.table, figure {
+  page-break-inside: avoid;
+  border: 0.5mm solid #000;
+}
+.table * {
+  margin: 0;
+  vertical-align: text-top;
+}
+.table thead table tr td,
+.table thead tr td.vr,
+.table tbody tr td,
+.table tbody tr th,
+.table tfoot tr td {
+  padding: 0 1mm;
+  line-height: 15pt;
+}
+.table tr th {
+  font-weight: normal;
+  text-align: left;
+}
+.hr {
+ border-top: 0.25mm solid #000;
+}
+.vr {
+ border-left: 0.25mm solid #000;
+}
+.unit,
+.value,
+.notes {
+  border-left: 0.25mm solid #000;
+}
+.unit {
+  text-align: left;
+}
+/*.value:after {
+  content: "XXX";
+  color: #EEE;
+}
+.notes:after {
+  content: "...";
+  color: #EEE;
+}*/
