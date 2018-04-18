@@ -2,3 +2,5 @@
 *.espressostorage
 
 *.webloc
+
+.DS_Store
