@@ -2,6 +2,7 @@ body {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 11pt;
   color: #333;
+  background: #666;
 }
 h1 {
   font-size: 36px;
@@ -21,22 +22,26 @@ label {
   height: 297mm;
   border: 0;
 }
-.navbar,
+.navbar {
+    color: black;
+}
+
 .hero {
   background: #666 /* rgb(154,118,52); Monsumgelb 1990 */;
   color: white;
 }
-.hero {
+.hero .container {
   padding-top: 50px;
   background-image: url(pic/bvf-brand.png);
-  background-size: 350px;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: top right;
 }
 .navbar .container {
-  border-bottom: 2px solid black;
   padding: 0 30px;
+  position: relative;
 }
+
 .breadcrumb {
    margin-left: -15px;
    background: #FFF;
@@ -44,6 +49,7 @@ label {
 }
 .navbar a {
   color: white;
+  border-bottom: 2px solid black;
 }
 .nav-item.active a.nav-link {
   background: black !important;
@@ -65,6 +71,14 @@ label {
 .checkRow {
   width: 50px;
   position: relative;
+}
+.header {
+    background: #EEE;
+}
+.content {
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.666);
 }
 footer {
   background: grey;
@@ -124,8 +138,8 @@ footer {
 .bvf-files .tablerow {
   padding: 0 10px;
   margin-bottom: 10px;
-  border: 2px solid #ccc;
-  border-radius: 3px;
+  border: 1px solid #ccc;
+  border-radius: 1px;
   display: block;
 }
 
